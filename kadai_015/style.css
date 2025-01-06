@@ -16,6 +16,10 @@ h1{
     text-shadow: 1px 1px 2px gray;
     border-bottom: solid 3px rgb(115, 115, 114);
     letter-spacing: 1.2em;
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body{
@@ -26,3 +30,4 @@ body{
 #basic p{
     font-weight: bold;
 }
+  
