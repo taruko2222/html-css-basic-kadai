@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+body, h1, p {
+    margin: 0;
+}
+
+header {
+    justify-content: center; /* 中央ぞろえ */
+    align-items: center; /* 縦方向も中央ぞろえ */
+    padding-bottom: 20px;
+    background-color: rgb(244, 79, 79);
+}
+
+main {
+    margin: 10px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+p, a {
+    font-size: 20px;
+}
+
+#parent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contents {
+    border: 3px solid rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+p:nth-of-type(2)::first-letter {
+    font-weight: bold;
+    color: rgb(97, 206, 249);
+}
+
+.contents img {
+    margin: 10px 0;
+    max-width: 70%;
+}
+
+h2 {
+    font-size: 25px;
+    border-bottom: 3px dotted rgb(236, 122, 122);
+}
+
+h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
+}
+
+footer {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+a:valid {
+    color: rgb(193, 234, 251)
+}
+
+a:hover {
+    color: rgb(245, 178, 168);
+}
+
+@media screen and (max-width: 768px) {
+    #parent {
+        flex-direction: column; /* 768px以下で縦ならべ */
+        align-items: center; /* 必要に応じ中央ぞろえ */
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 25px;
+    }
+}
